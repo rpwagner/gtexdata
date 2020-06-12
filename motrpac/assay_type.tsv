@@ -1,4 +1,4 @@
 id	name	description	synonyms
-OBI:0002020	epigenetic modification assay	An assay that identifies epigenetic modifications including histone modifications, open chromatin, and DNA methylation.	
 OBI:0001271	RNA-seq assay	An transcription profiling assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance.	
-OBI:0000366	metabolite profiling assay	An assay that detects and identifies chemical entities resulting from biochemical and cellular metabolism	
+OBI:0002020	epigenetic modification assay	An assay that identifies epigenetic modifications including histone modifications, open chromatin, and DNA methylation.	
+OBI:0000366	metabolite profiling assay	An assay that detects and identifies chemical entities resulting from biochemical and cellular metabolism
