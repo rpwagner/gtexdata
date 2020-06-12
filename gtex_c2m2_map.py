@@ -274,7 +274,7 @@ def build_files(srarun):
                                                           'biosample_id_namespace': namespace,
                                                           'biosample_id': biospecimen})
 
-def build_vocabularies():
+def build_vocabularies(dirname='datapackage'):
     edam_onto = Ontology('inputdata/edam.obo')
     # Hacked up Uberon so it will load
     uberon_onto = Ontology('inputdata/human-view.obo')
@@ -282,7 +282,7 @@ def build_vocabularies():
     
     fieldnames = ['id', 'name', 'description', 'synonyms']
     
-    with open('datapackage/data_type.tsv', 'w') as data_type_file:
+    with open(dirname + '/data_type.tsv', 'w') as data_type_file:
         data_type_writer = csv.DictWriter(data_type_file,
                                               fieldnames=fieldnames, delimiter='\t')
         data_type_writer.writeheader()
@@ -307,7 +307,7 @@ def build_vocabularies():
                              'synonyms': None}
             data_type_writer.writerow(data_type) 
 
-    with open('datapackage/file_format.tsv', 'w') as file_format_file:
+    with open(dirname + '/file_format.tsv', 'w') as file_format_file:
         file_format_writer = csv.DictWriter(file_format_file,
                                               fieldnames=fieldnames, delimiter='\t')
         file_format_writer.writeheader()
@@ -331,7 +331,7 @@ def build_vocabularies():
                              'synonyms': None}
             file_format_writer.writerow(file_format)
 
-    with open('datapackage/assay_type.tsv', 'w') as assay_type_file:
+    with open(dirname + '/assay_type.tsv', 'w') as assay_type_file:
         assay_type_writer = csv.DictWriter(assay_type_file,
                                               fieldnames=fieldnames, delimiter='\t')
         assay_type_writer.writeheader()
@@ -354,7 +354,7 @@ def build_vocabularies():
                              'synonyms': None}
             assay_type_writer.writerow(assay_type) 
 
-    with open('datapackage/anatomy.tsv', 'w') as anatomy_file:
+    with open(dirname + '/anatomy.tsv', 'w') as anatomy_file:
         anatomy_writer = csv.DictWriter(anatomy_file,
                                               fieldnames=fieldnames, delimiter='\t')
         anatomy_writer.writeheader()

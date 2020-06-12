@@ -54,14 +54,23 @@ anatomy_dict = {
     'Thyroid': 'UBERON:0002046',
     'Uterus': 'UBERON:0000995',
     'Vagina': 'UBERON:0000996',
-    'Whole Blood': 'UBERON:0013756'
+    'Whole Blood': 'UBERON:0013756',
+    'm1': 'UBERON:0000948',
+    'm2': 'UBERON:0001347',
+    'm4': 'UBERON:0001388',
+    'm5': 'UBERON:0001969',
+    'm6': 'UBERON:0002107',
+    'm7': 'UBERON:0013756'
     }
 
 assay_types = {
     'WGS': 'OBI:0002117',
     'RNA-Seq': 'OBI:0001271',
     'WXS': 'OBI:0002118',
-    'histology': 'OBI:0600020'
+    'histology': 'OBI:0600020',
+    'm1': 'OBI:0000366',
+    'm2': 'OBI:0001271',
+    'm3': 'OBI:0002020'
     }
 
 edam_types = {'file_formats': {
@@ -70,10 +79,13 @@ edam_types = {'file_formats': {
     'bam,sra': 'format:2572',
     'sra,bam': 'format:2572',
     'bam,contigs,sra': 'format:2572',
-    'sra': 'format:3698'},
+    'sra': 'format:3698',
+    'tsv': 'format:3475'},
     'data_types': {
         'RNA-Seq': 'data:3495',
         'WGS': 'data:3494',
-        'WXS': 'data:3494'
+        'WXS': 'data:3494',
+        'm1': 'data:0920',
+        'm2': 'data:2536'
     }
 }
