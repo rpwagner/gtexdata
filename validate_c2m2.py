@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-# run this in directory above inputdata and datapackage
-
 import sys
 import csv
 import datapackage

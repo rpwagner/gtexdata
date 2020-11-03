@@ -1,2 +1,2 @@
-id_namespace	id	persistent_id	creation_time	abbreviation	name	description
+id_namespace	local_id	persistent_id	creation_time	abbreviation	name	description
 https://motrpac-data.org/	pre-release		2020-06-12T00:00:00Z	MoTrPACpre	MoTrPAC Pre-Release	Pre-release data from the MoTrPAC Data Coordinating Center.

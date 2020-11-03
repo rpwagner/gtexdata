@@ -1,0 +1,49 @@
+DONE
+biosample.tsv
+file_describes_biosample.tsv
+file.tsv
+subject.tsv
+anatomy.tsv
+assay_type.tsv
+subject_role_taxonomy.tsv
+subject_in_collection.tsv
+project_in_project.tsv
+data_type.tsv
+file_format.tsv
+ncbi_taxonomy.tsv
+project.tsv
+id_namespace.tsv
+file_in_collection.tsv
+file_describes_subject.tsv
+collection_in_collection.tsv
+collection_defined_by_project.tsv
+collection.tsv
+biosample_in_collection.tsv
+biosample_from_subject.tsv
+primary_dcc_contact.tsv
+motrpac-datapackage.json
+
+DELETED
+subject_role.tsv
+subject_granularity.tsv
+
+TO DO
+
+
+
+
+
+
+
+Quick list of change notes:
+global rename of id to local_id wherever it's paired with a qualifying id_namespace (so everywhere except the id fields in the CV tables, which won't change)
+
+corresponding rename of x_id to x_local_id wherever x_id appears in association tables or foreign keys (e.g. file.project -> file.project_local_id, file_in_collection.file_id -> file_in_collection.file_local_id
+
+new file table columns:  mime_type and uncompressed_size_in_bytes
+
+one new primary_dcc_contact table giving basic contact info for one data manager or PI to attach to each DCC's data package (linked via foreign key to the root node of the project hierarchy; that node, by convention, represents the DCC itself): see JSON for fields and nullability
+
+move of assay_type column and fkey constraint from biosample to file table: this is the one bit we may have to go back to the DCCs to do properly. worst-case, just null it for all files. if you want, you can try to follow whatever association links there already are in the existing instance, to yank assay_type values from biosample entities over to files, wherever biosamples were related to files via file_describes_biosample. (in cases of multiple associations, be arbitrary; in cases where no associations allow for any export of a non-null assay_type value from a biosample to a file, just null the corresponding file.assay_type field)
+
+all gold tables except id_namespace have been removed and replaced with JSON enums (cf. JSON for details; the id_namespace table is also going away shortly, but i wasn't able to push that change through before 10/31 without screwing up work for recipients of "model is frozen til 10/31" promises, so for now leave id_namespace.tsv in, exactly as before)

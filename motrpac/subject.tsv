@@ -1,4 +1,4 @@
-id_namespace	id	project_id_namespace	project	persistent_id	creation_time	granularity
+id_namespace	local_id	project_id_namespace	project_local_id	persistent_id	creation_time	granularity
 https://motrpac-data.org/	10028056	https://motrpac-data.org/	MoTrPAC			cfde_subject_granularity:0
 https://motrpac-data.org/	10028137	https://motrpac-data.org/	MoTrPAC			cfde_subject_granularity:0
 https://motrpac-data.org/	10028560	https://motrpac-data.org/	MoTrPAC			cfde_subject_granularity:0

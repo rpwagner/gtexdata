@@ -1,4 +1,4 @@
-subject_id_namespace	subject_id	role_id	taxonomy_id
+subject_id_namespace	subject_local_id	role_id	taxonomy_id
 https://motrpac-data.org/	10028056	cfde_subject_role:0	NCBI:txid10116
 https://motrpac-data.org/	10028137	cfde_subject_role:0	NCBI:txid10116
 https://motrpac-data.org/	10028560	cfde_subject_role:0	NCBI:txid10116

@@ -1,4 +1,4 @@
-biosample_id_namespace	biosample_id	subject_id_namespace	subject_id
+biosample_id_namespace	biosample_local_id	subject_id_namespace	subject_local_id
 https://motrpac-data.org/	90160013107	https://motrpac-data.org/	10319530
 https://motrpac-data.org/	90159013107	https://motrpac-data.org/	10193170
 https://motrpac-data.org/	90033013107	https://motrpac-data.org/	10031863
