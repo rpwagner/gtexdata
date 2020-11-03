@@ -1,4 +1,4 @@
-id_namespace	id	project_id_namespace	project	persistent_id	creation_time	granularity
+id_namespace	local_id	project_id_namespace	project_local_id	persistent_id	creation_time	granularity
 https://gtexportal.org	GTEX-14LZ3	https://gtexportal.org	0			cfde_subject_granularity:0
 https://gtexportal.org	GTEX-13X6J	https://gtexportal.org	0			cfde_subject_granularity:0
 https://gtexportal.org	GTEX-13FTZ	https://gtexportal.org	0			cfde_subject_granularity:0

@@ -1,4 +1,4 @@
-subject_id_namespace	subject_id	collection_id_namespace	collection_id
+subject_id_namespace	subject_local_id	collection_id_namespace	collection_local_id
 https://gtexportal.org	GTEX-14LZ3	https://gtexportal.org	V8
 https://gtexportal.org	GTEX-13X6J	https://gtexportal.org	V8
 https://gtexportal.org	GTEX-13FTZ	https://gtexportal.org	V8

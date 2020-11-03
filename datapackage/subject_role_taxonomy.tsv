@@ -1,4 +1,4 @@
-subject_id_namespace	subject_id	role_id	taxonomy_id
+subject_id_namespace	subject_local_id	role_id	taxonomy_id
 https://gtexportal.org	GTEX-14LZ3	cfde_subject_role:0	NCBI:txid9606
 https://gtexportal.org	GTEX-13X6J	cfde_subject_role:0	NCBI:txid9606
 https://gtexportal.org	GTEX-13FTZ	cfde_subject_role:0	NCBI:txid9606
